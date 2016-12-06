@@ -1,6 +1,6 @@
 <?php
-function wp_child_enqueue_scripts() {
-	wp_register_style( 'childstyle', get_stylesheet_directory_uri() . '/style.css'  );
-	wp_enqueue_style( 'childstyle' );
+
+function ditl__scripts() {
+	wp_register_style( 'ditl-style', get_stylesheet_directory_uri() . '/ditl-style.css'  );	wp_enqueue_style( 'ditl-style' );
 }
-add_action( 'wp_enqueue_scripts', 'wp_child_enqueue_scripts');
+add_action( 'wp_enqueue_scripts', 'ditl__scripts',200);
